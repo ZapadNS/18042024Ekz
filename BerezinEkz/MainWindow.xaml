@@ -1,0 +1,27 @@
+﻿<Window x:Class="BerezinEkz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BerezinEkz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <TextBlock Canvas.Left="10" Canvas.Top="10">Объём:</TextBlock>
+        <TextBox x:Name="Volume" Canvas.Left="75" Canvas.Top="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="134"></TextBox>
+        <TextBlock Canvas.Left="10" Canvas.Top="33" HorizontalAlignment="Center" VerticalAlignment="Top">Плотность:</TextBlock>
+        <TextBox x:Name="Density" Canvas.Left="75" Canvas.Top="33" HorizontalAlignment="Center" VerticalAlignment="Top" Width="134"></TextBox>
+        <TextBlock Canvas.Left="10" Canvas.Top="54" HorizontalAlignment="Center" VerticalAlignment="Top">Масса:</TextBlock>
+        <TextBlock x:Name="Weight" Canvas.Left="52" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+        <Button x:Name="GetWeightButton" Canvas.Left="10" Canvas.Top="77" Height="29" Width="199" Click="GetWeightButton_Click">Вычислить массу</Button>
+
+        <TextBlock Canvas.Left="254" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top">Объем:</TextBlock>
+        <TextBox x:Name="SecondVolume" Canvas.Left="364" Canvas.Top="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158"></TextBox>
+        <TextBlock Canvas.Left="254" Canvas.Top="31">Текущий запас:</TextBlock>
+        <TextBox x:Name="VolumeNow" Canvas.Left="364" Canvas.Top="33" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158"></TextBox>
+        <TextBlock Canvas.Left="254" Canvas.Top="54">Доступный объем:</TextBlock>
+        <TextBlock x:Name="VolumeResult" Canvas.Left="364" Canvas.Top="54" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+        <Button x:Name="GetVolumeResult" Canvas.Left="254" Canvas.Top="77" Height="29" Width="268" Click="GetVolumeResult_Click">Вычислить доступный объём</Button>
+        <Button x:Name="SetFuel" Canvas.Left="254" Canvas.Top="111" Height="28" Width="268" Click="SetFuel_Click">Дозаправить</Button>
+    </Canvas>
+</Window>
